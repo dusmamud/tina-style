@@ -39,7 +39,28 @@
 	/>
 </svelte:head>
 
-<!-- Mobile: phone column (reference same-to-same). Desktop (lg+): full-bleed, no side gaps. -->
+{#snippet socials(containerClass: string)}
+	<nav aria-label="Social links" class={containerClass}>
+		<a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram" class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-300 bg-white/70 transition hover:bg-white lg:h-11 lg:w-11">
+			<svg viewBox="0 0 24 24" class="h-5 w-5 fill-none stroke-stone-800" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.2" cy="6.8" r="1" class="fill-stone-800 stroke-none" /></svg>
+		</a>
+		<a href="https://tiktok.com" target="_blank" rel="noreferrer" aria-label="TikTok" class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-300 bg-white/70 transition hover:bg-white lg:h-11 lg:w-11">
+			<svg viewBox="0 0 24 24" class="h-5 w-5 fill-stone-800"><path d="M16.6 3c.4 2.1 1.8 3.6 3.9 3.9v3.1c-1.5 0-2.9-.5-3.9-1.3v6.1c0 3.4-2.6 6.2-6 6.2A5.9 5.9 0 0 1 4.5 15c0-3.3 2.7-6 6-6 .3 0 .7 0 1 .1v3.2a2.8 2.8 0 0 0-1-.2 2.9 2.9 0 0 0-3 2.9 2.9 2.9 0 0 0 3 2.9c1.7 0 3-1.3 3-3V3h3.1Z" /></svg>
+		</a>
+		<a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube" class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-300 bg-white/70 transition hover:bg-white lg:h-11 lg:w-11">
+			<svg viewBox="0 0 24 24" class="h-5 w-5 fill-stone-800"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.5 12 5.5 12 5.5s-6 0-7.9.6A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.6 7.9.6 7.9.6s6 0 7.9-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22.4 12 31 31 0 0 0 22 8.2ZM10 15V9l5.2 3L10 15Z" /></svg>
+		</a>
+		<a href="https://pinterest.com" target="_blank" rel="noreferrer" aria-label="Pinterest" class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-300 bg-white/70 transition hover:bg-white lg:h-11 lg:w-11">
+			<svg viewBox="0 0 24 24" class="h-5 w-5 fill-stone-800"><path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-4.9s-.3-.6-.3-1.5c0-1.4.8-2.5 1.9-2.5.9 0 1.3.7 1.3 1.5 0 .9-.6 2.2-.9 3.5-.2 1 .5 1.9 1.5 1.9 1.9 0 3.3-2 3.3-4.8 0-2.5-1.8-4.3-4.4-4.3a4.6 4.6 0 0 0-4.8 4.6c0 .9.4 1.9.8 2.4.1.1.1.2.1.3l-.3 1.2c0 .2-.2.2-.4.1-1.2-.6-2-2.4-2-3.9 0-3.2 2.3-6.1 6.7-6.1 3.5 0 6.2 2.5 6.2 5.8 0 3.5-2.2 6.3-5.3 6.3-1 0-2-.5-2.3-1.2l-.6 2.4c-.2.9-.8 1.9-1.3 2.6A10 10 0 1 0 12 2Z" /></svg>
+		</a>
+		<a href="mailto:hello@tinastyle.com" aria-label="Email" class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-300 bg-white/70 transition hover:bg-white lg:h-11 lg:w-11">
+			<svg viewBox="0 0 24 24" class="h-5 w-5 fill-none stroke-stone-800" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3.5 7 8.5 6 8.5-6" /></svg>
+		</a>
+	</nav>
+{/snippet}
+
+<!-- Full-bleed page, no side gaps. Hero: mobile = photo banner (420px) + profile below;
+     desktop (lg+) = two-column hero, profile left + photo right, all visible in first screen. -->
 <div class="flex min-h-screen w-full flex-col bg-cream">
 	<!-- Desktop top nav (mobile: hidden) -->
 	<nav class="hidden items-center justify-between px-16 py-4 lg:flex" aria-label="Main">
@@ -54,101 +75,114 @@
 	</nav>
 
 	<!-- Hero -->
-	<header class="relative h-[540px] overflow-hidden lg:h-[600px]">
-		<img
-			src="/images/hero.jpg"
-			alt="Tina Style — woman in a white blazer and sunglasses in warm sunlight"
-			class="h-full w-full object-cover object-[50%_20%] lg:object-[50%_22%]"
-			fetchpriority="high"
-		/>
-		<div
-			class="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/15 via-transparent to-cream"
-		></div>
-
-		<p
-			class="absolute left-5 top-6 -rotate-3 font-script text-[34px] leading-[0.95] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)] lg:left-10 lg:top-10 lg:text-[58px]"
-		>
-			Good<br />Style<br />Good<br />Mood <span class="text-[22px] lg:text-[34px]">♡</span>
-		</p>
-
-		<div class="absolute right-4 top-5 lg:hidden">
-			<button
-				type="button"
-				aria-label="More options"
-				aria-expanded={menuOpen}
-				onclick={() => (menuOpen = !menuOpen)}
-				class="flex h-10 w-10 items-center justify-center rounded-full bg-white/25 text-xl font-bold text-white backdrop-blur-md transition hover:bg-white/40"
-			>
-				•••
-			</button>
-			{#if menuOpen}
-				<div
-					class="absolute right-0 top-12 w-44 overflow-hidden rounded-xl bg-white text-sm shadow-xl"
-				>
-					<a href="#shop" onclick={() => (menuOpen = false)} class="block px-4 py-3 hover:bg-stone-100"
-						>Shop my favorites</a
-					>
-					<a href="#vlog" onclick={() => (menuOpen = false)} class="block px-4 py-3 hover:bg-stone-100"
-						>Watch my latest vlog</a
-					>
-					<a
-						href="#newsletter"
-						onclick={() => (menuOpen = false)}
-						class="block px-4 py-3 hover:bg-stone-100">Join the newsletter</a
-					>
-				</div>
-			{/if}
-		</div>
-	</header>
-
-	<!-- Profile: mobile centered stack / desktop horizontal row -->
-	<section
-		class="relative z-10 -mt-[72px] px-5 text-center lg:-mt-[88px] lg:flex lg:items-end lg:gap-8 lg:px-16 lg:text-left"
-	>
-		<img
-			src="/images/avatar.jpg"
-			alt="Tina Style"
-			class="mx-auto h-[124px] w-[124px] shrink-0 rounded-full border-[5px] border-cream object-cover shadow-lg lg:mx-0 lg:h-[168px] lg:w-[168px]"
-		/>
-		<div class="min-w-0 lg:pb-1">
-			<h1
-				class="mt-3 flex items-center justify-center gap-1.5 font-display text-[32px] font-bold leading-none lg:mt-0 lg:justify-start lg:text-[44px]"
-			>
+	<header class="relative lg:grid lg:grid-cols-[1fr_1.1fr]">
+		<!-- Desktop profile panel (mobile: hidden — profile is in the section below) -->
+		<div class="hidden flex-col justify-center px-16 py-12 lg:flex">
+			<img
+				src="/images/avatar.jpg"
+				alt="Tina Style"
+				class="h-[128px] w-[128px] rounded-full border-[5px] border-white object-cover shadow-lg"
+			/>
+			<h1 class="mt-5 flex items-center gap-2 font-display text-[48px] font-bold leading-none">
 				Tina Style
-				<svg viewBox="0 0 24 24" class="h-5 w-5 fill-stone-500 lg:h-6 lg:w-6" aria-label="Verified"
+				<svg viewBox="0 0 24 24" class="h-6 w-6 fill-stone-500" aria-label="Verified"
 					><path
 						d="M12 1.8 14.5 4l3.2-.3.7 3.1 2.9 1.5-1.3 3 1.3 3-2.9 1.5-.7 3.1-3.2-.3L12 22.2 9.5 20l-3.2.3-.7-3.1-2.9-1.5 1.3-3-1.3-3 2.9-1.5.7-3.1 3.2.3L12 1.8Zm-1.2 13.4 5-5-1.4-1.4-3.6 3.6-1.6-1.6-1.4 1.4 3 3Z"
 					/></svg
 				>
 			</h1>
-			<p class="mt-2 text-[11px] font-semibold tracking-[0.28em] text-stone-500 lg:text-[12px]">
+			<p class="mt-3 text-[12px] font-semibold tracking-[0.28em] text-stone-500">
 				FASHION &nbsp;•&nbsp; LIFESTYLE &nbsp;•&nbsp; TRAVEL
 			</p>
-			<p
-				class="mx-auto mt-2 max-w-[300px] text-[13px] leading-snug text-stone-600 lg:mx-0 lg:max-w-[520px] lg:text-[15px]"
-			>
+			<p class="mt-3 max-w-[460px] text-[15px] leading-snug text-stone-600">
 				Sharing my daily looks, travel spots and everything that makes life more beautiful ✨
 			</p>
-
-			<!-- Socials -->
-			<nav aria-label="Social links" class="mt-4 flex items-center justify-center gap-3 lg:justify-start lg:gap-3.5">
-				<a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram" class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-300 bg-white/70 transition hover:bg-white lg:h-11 lg:w-11">
-					<svg viewBox="0 0 24 24" class="h-5 w-5 fill-none stroke-stone-800" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.2" cy="6.8" r="1" class="fill-stone-800 stroke-none" /></svg>
-				</a>
-				<a href="https://tiktok.com" target="_blank" rel="noreferrer" aria-label="TikTok" class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-300 bg-white/70 transition hover:bg-white lg:h-11 lg:w-11">
-					<svg viewBox="0 0 24 24" class="h-5 w-5 fill-stone-800"><path d="M16.6 3c.4 2.1 1.8 3.6 3.9 3.9v3.1c-1.5 0-2.9-.5-3.9-1.3v6.1c0 3.4-2.6 6.2-6 6.2A5.9 5.9 0 0 1 4.5 15c0-3.3 2.7-6 6-6 .3 0 .7 0 1 .1v3.2a2.8 2.8 0 0 0-1-.2 2.9 2.9 0 0 0-3 2.9 2.9 2.9 0 0 0 3 2.9c1.7 0 3-1.3 3-3V3h3.1Z" /></svg>
-				</a>
-				<a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube" class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-300 bg-white/70 transition hover:bg-white lg:h-11 lg:w-11">
-					<svg viewBox="0 0 24 24" class="h-5 w-5 fill-stone-800"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.5 12 5.5 12 5.5s-6 0-7.9.6A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.6 7.9.6 7.9.6s6 0 7.9-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22.4 12 31 31 0 0 0 22 8.2ZM10 15V9l5.2 3L10 15Z" /></svg>
-				</a>
-				<a href="https://pinterest.com" target="_blank" rel="noreferrer" aria-label="Pinterest" class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-300 bg-white/70 transition hover:bg-white lg:h-11 lg:w-11">
-					<svg viewBox="0 0 24 24" class="h-5 w-5 fill-stone-800"><path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-4.9s-.3-.6-.3-1.5c0-1.4.8-2.5 1.9-2.5.9 0 1.3.7 1.3 1.5 0 .9-.6 2.2-.9 3.5-.2 1 .5 1.9 1.5 1.9 1.9 0 3.3-2 3.3-4.8 0-2.5-1.8-4.3-4.4-4.3a4.6 4.6 0 0 0-4.8 4.6c0 .9.4 1.9.8 2.4.1.1.1.2.1.3l-.3 1.2c0 .2-.2.2-.4.1-1.2-.6-2-2.4-2-3.9 0-3.2 2.3-6.1 6.7-6.1 3.5 0 6.2 2.5 6.2 5.8 0 3.5-2.2 6.3-5.3 6.3-1 0-2-.5-2.3-1.2l-.6 2.4c-.2.9-.8 1.9-1.3 2.6A10 10 0 1 0 12 2Z" /></svg>
-				</a>
-				<a href="mailto:hello@tinastyle.com" aria-label="Email" class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-300 bg-white/70 transition hover:bg-white lg:h-11 lg:w-11">
-					<svg viewBox="0 0 24 24" class="h-5 w-5 fill-none stroke-stone-800" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3.5 7 8.5 6 8.5-6" /></svg>
-				</a>
-			</nav>
+			{@render socials('mt-5 flex items-center gap-3.5')}
+			<div class="mt-6 flex gap-3">
+				<a
+					href="#shop"
+					class="rounded-full bg-stone-900 px-5 py-2.5 text-[13px] font-semibold text-white transition hover:bg-stone-700"
+					>Shop My Favorites</a
+				>
+				<a
+					href="#vlog"
+					class="rounded-full border border-stone-400 bg-white px-5 py-2.5 text-[13px] font-semibold text-stone-900 transition hover:bg-stone-100"
+					>Watch My Vlog</a
+				>
+			</div>
 		</div>
+
+		<!-- Photo panel -->
+		<div class="relative h-[420px] overflow-hidden lg:h-auto lg:min-h-[560px]">
+			<img
+				src="/images/hero.jpg"
+				alt="Tina Style — woman in a white blazer and sunglasses in warm sunlight"
+				class="absolute inset-0 h-full w-full object-cover object-[50%_20%]"
+				fetchpriority="high"
+			/>
+			<div
+				class="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/15 via-transparent to-cream lg:to-black/10"
+			></div>
+
+			<p
+				class="absolute left-5 top-6 -rotate-3 font-script text-[34px] leading-[0.95] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)] lg:left-8 lg:top-8 lg:text-[52px]"
+			>
+				Good<br />Style<br />Good<br />Mood <span class="text-[22px] lg:text-[32px]">♡</span>
+			</p>
+
+			<div class="absolute right-4 top-5 lg:hidden">
+				<button
+					type="button"
+					aria-label="More options"
+					aria-expanded={menuOpen}
+					onclick={() => (menuOpen = !menuOpen)}
+					class="flex h-10 w-10 items-center justify-center rounded-full bg-white/25 text-xl font-bold text-white backdrop-blur-md transition hover:bg-white/40"
+				>
+					•••
+				</button>
+				{#if menuOpen}
+					<div
+						class="absolute right-0 top-12 w-44 overflow-hidden rounded-xl bg-white text-sm shadow-xl"
+					>
+						<a href="#shop" onclick={() => (menuOpen = false)} class="block px-4 py-3 hover:bg-stone-100"
+							>Shop my favorites</a
+						>
+						<a href="#vlog" onclick={() => (menuOpen = false)} class="block px-4 py-3 hover:bg-stone-100"
+							>Watch my latest vlog</a
+						>
+						<a
+							href="#newsletter"
+							onclick={() => (menuOpen = false)}
+							class="block px-4 py-3 hover:bg-stone-100">Join the newsletter</a
+						>
+					</div>
+				{/if}
+			</div>
+		</div>
+	</header>
+
+	<!-- Profile: mobile only (desktop: hidden — profile lives in the hero left panel) -->
+	<section class="relative z-10 -mt-[72px] px-5 text-center lg:hidden">
+		<img
+			src="/images/avatar.jpg"
+			alt="Tina Style"
+			class="mx-auto h-[124px] w-[124px] rounded-full border-[5px] border-cream object-cover shadow-lg"
+		/>
+		<h1 class="mt-3 flex items-center justify-center gap-1.5 font-display text-[32px] font-bold leading-none">
+			Tina Style
+			<svg viewBox="0 0 24 24" class="h-5 w-5 fill-stone-500" aria-label="Verified"
+				><path
+					d="M12 1.8 14.5 4l3.2-.3.7 3.1 2.9 1.5-1.3 3 1.3 3-2.9 1.5-.7 3.1-3.2-.3L12 22.2 9.5 20l-3.2.3-.7-3.1-2.9-1.5 1.3-3-1.3-3 2.9-1.5.7-3.1 3.2.3L12 1.8Zm-1.2 13.4 5-5-1.4-1.4-3.6 3.6-1.6-1.6-1.4 1.4 3 3Z"
+				/></svg
+			>
+		</h1>
+		<p class="mt-2 text-[11px] font-semibold tracking-[0.28em] text-stone-500">
+			FASHION &nbsp;•&nbsp; LIFESTYLE &nbsp;•&nbsp; TRAVEL
+		</p>
+		<p class="mx-auto mt-2 max-w-[300px] text-[13px] leading-snug text-stone-600">
+			Sharing my daily looks, travel spots and everything that makes life more beautiful ✨
+		</p>
+		{@render socials('mt-4 flex items-center justify-center gap-3')}
 	</section>
 
 	<!-- Link cards -->
