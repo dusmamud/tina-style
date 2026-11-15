@@ -1,0 +1,109 @@
+{
+  "route / 200 + clean": {
+    "ok": true,
+    "detail": "status=200 errors=0 scrollW=1280 iw=1280"
+  },
+  "route /about 200 + clean": {
+    "ok": true,
+    "detail": "status=200 errors=0 scrollW=1280 iw=1280"
+  },
+  "route /shop 200 + clean": {
+    "ok": true,
+    "detail": "status=200 errors=0 scrollW=1280 iw=1280"
+  },
+  "route /blog 200 + clean": {
+    "ok": true,
+    "detail": "status=200 errors=0 scrollW=1280 iw=1280"
+  },
+  "route /videos 200 + clean": {
+    "ok": true,
+    "detail": "status=200 errors=0 scrollW=1280 iw=1280"
+  },
+  "route /contact 200 + clean": {
+    "ok": true,
+    "detail": "status=200 errors=0 scrollW=1280 iw=1280"
+  },
+  "route /privacy 200 + clean": {
+    "ok": true,
+    "detail": "status=200 errors=0 scrollW=1280 iw=1280"
+  },
+  "route /terms 200 + clean": {
+    "ok": true,
+    "detail": "status=200 errors=0 scrollW=1280 iw=1280"
+  },
+  "route /blog/paris-day 200 + clean": {
+    "ok": true,
+    "detail": "status=200 errors=0 scrollW=1280 iw=1280"
+  },
+  "route /blog/santorini-3-days 200 + clean": {
+    "ok": true,
+    "detail": "status=200 errors=0 scrollW=1280 iw=1280"
+  },
+  "route /blog/bali-slow-travel 200 + clean": {
+    "ok": true,
+    "detail": "status=200 errors=0 scrollW=1280 iw=1280"
+  },
+  "route /blog/tokyo-after-dark 200 + clean": {
+    "ok": true,
+    "detail": "status=200 errors=0 scrollW=1280 iw=1280"
+  },
+  "route /blog/rome-on-foot 200 + clean": {
+    "ok": true,
+    "detail": "status=200 errors=0 scrollW=1280 iw=1280"
+  },
+  "route /blog/maldives-on-a-budget 200 + clean": {
+    "ok": true,
+    "detail": "status=200 errors=0 scrollW=1280 iw=1280"
+  },
+  "nav has 6 links + Shop marked current": {
+    "ok": true,
+    "detail": "[\"Tina Style ♥\",\"Home\",\"About\",\"Shop(current)\",\"Blog\",\"Videos\",\"Contact\",\"\"]"
+  },
+  "bag badge shows 1 after add on home": {
+    "ok": true,
+    "detail": "badge=1"
+  },
+  "bag persists on /shop page": {
+    "ok": true
+  },
+  "shop filter Beauty shows 3 beauty products only": {
+    "ok": true,
+    "detail": "3 visible"
+  },
+  "shop filter Bags shows 2 products": {
+    "ok": true,
+    "detail": "2 visible"
+  },
+  "blog article opens with title": {
+    "ok": true,
+    "detail": "http://127.0.0.1:4173/blog/tokyo-after-dark | Tokyo After Dark: Neon, Ramen & Tiny Bars"
+  },
+  "article has 5 body paragraphs": {
+    "ok": true,
+    "detail": "8 paragraphs"
+  },
+  "article back link returns to /blog": {
+    "ok": true
+  },
+  "contact rejects short name": {
+    "ok": true
+  },
+  "contact accepts valid form + shows success": {
+    "ok": true
+  },
+  "mobile hamburger opens": {
+    "ok": true
+  },
+  "mobile menu navigates to /about + closes": {
+    "ok": true,
+    "detail": "http://127.0.0.1:4173/about"
+  },
+  "mobile /about no overflow + no console errors": {
+    "ok": true,
+    "detail": "scrollW=390 errors=0"
+  },
+  "home has all new sections + footer links": {
+    "ok": true,
+    "detail": "{\"aboutPreview\":true,\"blogPreview\":true,\"testimonials\":true,\"instagram\":true,\"cta\":true,\"footerPrivacy\":true,\"footerTerms\":true,\"footerContact\":true}"
+  }
+}

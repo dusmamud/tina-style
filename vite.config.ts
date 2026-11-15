@@ -7,7 +7,10 @@ export default defineConfig({
 	plugins: [
 		tailwindcss(),
 		sveltekit({
-			adapter: adapter({ pages: 'build', assets: 'build', fallback: undefined, precompress: false, strict: true })
+			adapter: adapter({ pages: 'build', assets: 'build', fallback: undefined, precompress: false, strict: true }),
+			// SvelteKit 3 removed the built-in $lib alias; re-add it explicitly (Kit's own
+			// documented escape hatch) so $lib/... imports keep working in code and in svelte-check.
+			alias: { $lib: 'src/lib' }
 		})
 	]
 });
