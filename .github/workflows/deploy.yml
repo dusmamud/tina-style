@@ -1,0 +1,67 @@
+name: Deploy to Cloudflare Pages
+
+# Tina Style — link-in-bio web app (SvelteKit 3 + Svelte 5 + Tailwind CSS 4,
+# adapter-static, fully prerendered).
+# Build + check on every push / PR to main. Deploy to Cloudflare Pages only
+# after the build job passes, and only on push to main. Deploy uses the
+# pre-built `build/` output from the build job, so exactly what was tested
+# is what goes live.
+# Required repo secrets (Settings → Secrets and variables → Actions):
+#   CLOUDFLARE_API_TOKEN  — API token with Cloudflare Pages:Edit + Account:Read
+#   CLOUDFLARE_ACCOUNT_ID — Cloudflare account ID (Dashboard → Account ID)
+# A Cloudflare Pages project named `tina-style` must exist (Dashboard →
+# Workers & Pages → Create → Pages → Direct Uploads → project name
+# `tina-style`), or the first deploy creates it via Wrangler.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build + check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 26
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Typecheck (svelte-check)
+        run: npm run check
+      - name: Build static site
+        run: npm run build
+      - name: Check prerendered output
+        run: |
+          test -f build/index.html
+          test -f build/images/hero.jpg
+          test -f build/images/avatar.jpg
+          echo "prerendered output OK"
+      - name: Upload build output for deploy
+        if: github.event_name == 'push'
+        uses: actions/upload-artifact@v4
+        with:
+          name: tina-style-build
+          path: build
+
+  deploy:
+    name: Deploy to Cloudflare Pages
+    needs: build
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: tina-style-build
+          path: build
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy build --project-name tina-style --commit-dirty=true
