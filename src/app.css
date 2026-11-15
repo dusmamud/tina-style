@@ -16,7 +16,7 @@ html {
 
 body {
 	font-family: var(--font-sans);
-	background: #ddd2c2;
+	background: #f7f1e8;
 	color: var(--color-ink);
 	-webkit-font-smoothing: antialiased;
 }

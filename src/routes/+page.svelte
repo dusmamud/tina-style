@@ -39,10 +39,10 @@
 	/>
 </svelte:head>
 
-<!-- Mobile: 430px phone column (reference same-to-same). Desktop (lg+): full-width layout. -->
-<div class="mx-auto w-full max-w-[430px] bg-cream shadow-[0_0_60px_rgba(0,0,0,0.25)] sm:max-w-2xl lg:max-w-6xl">
+<!-- Mobile: phone column (reference same-to-same). Desktop (lg+): full-bleed, no side gaps. -->
+<div class="flex min-h-screen w-full flex-col bg-cream">
 	<!-- Desktop top nav (mobile: hidden) -->
-	<nav class="hidden items-center justify-between px-10 py-4 lg:flex" aria-label="Main">
+	<nav class="hidden items-center justify-between px-16 py-4 lg:flex" aria-label="Main">
 		<a href="#top" class="font-display text-[22px] font-bold">Tina Style <span class="text-red-400">♥</span></a>
 		<div class="flex items-center gap-8 text-[14px] font-medium text-stone-600">
 			<a href="#shop" class="hover:text-stone-900">My Outfits</a>
@@ -54,7 +54,7 @@
 	</nav>
 
 	<!-- Hero -->
-	<header class="relative h-[540px] overflow-hidden lg:h-[560px]">
+	<header class="relative h-[540px] overflow-hidden lg:h-[600px]">
 		<img
 			src="/images/hero.jpg"
 			alt="Tina Style — woman in a white blazer and sunglasses in warm sunlight"
@@ -103,7 +103,7 @@
 
 	<!-- Profile: mobile centered stack / desktop horizontal row -->
 	<section
-		class="relative z-10 -mt-[72px] px-5 text-center lg:-mt-[88px] lg:flex lg:items-end lg:gap-8 lg:px-10 lg:text-left"
+		class="relative z-10 -mt-[72px] px-5 text-center lg:-mt-[88px] lg:flex lg:items-end lg:gap-8 lg:px-16 lg:text-left"
 	>
 		<img
 			src="/images/avatar.jpg"
@@ -152,14 +152,14 @@
 	</section>
 
 	<!-- Link cards -->
-	<section class="px-4 pt-5 lg:px-10 lg:pt-8">
+	<section class="px-4 pt-5 lg:px-16 lg:pt-8">
 		<div class="grid grid-cols-4 gap-2 lg:gap-4">
 			{#each cards as card}
 				<a
 					href={card.href}
 					class="group overflow-hidden rounded-xl bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
 				>
-					<img src={card.img} alt={card.title} loading="lazy" class="h-[64px] w-full object-cover lg:h-[180px]" />
+					<img src={card.img} alt={card.title} loading="lazy" class="h-[64px] w-full object-cover lg:h-[220px]" />
 					<span class="flex items-center justify-between px-2 pb-1.5 pt-1.5 lg:px-3 lg:pb-3 lg:pt-3">
 						<span>
 							<span class="block text-[11px] font-bold leading-tight lg:text-[15px]">{card.title}</span>
@@ -173,12 +173,12 @@
 	</section>
 
 	<!-- Featured vlog -->
-	<section id="vlog" class="px-4 pt-4 lg:px-10 lg:pt-6">
+	<section id="vlog" class="px-4 pt-4 lg:px-16 lg:pt-6">
 		<a
 			href="https://www.youtube.com"
 			target="_blank"
 			rel="noreferrer"
-			class="group relative block h-[196px] overflow-hidden rounded-2xl shadow-md lg:h-[360px]"
+			class="group relative block h-[196px] overflow-hidden rounded-2xl shadow-md lg:h-[420px]"
 		>
 			<img
 				src="/images/vlog-paris.jpg"
@@ -205,7 +205,7 @@
 	</section>
 
 	<!-- Shop -->
-	<section id="shop" class="px-4 pt-5 lg:px-10 lg:pt-8">
+	<section id="shop" class="px-4 pt-5 lg:px-16 lg:pt-8">
 		<div class="flex items-center justify-between">
 			<h2 class="font-display text-[19px] font-bold lg:text-[28px]">Shop My Favorites</h2>
 			<a
@@ -223,7 +223,7 @@
 		<div class="mt-3 grid grid-cols-4 gap-2 lg:gap-4">
 			{#each products as p}
 				<div class="overflow-hidden rounded-xl bg-white shadow-sm">
-					<img src={p.img} alt={p.name} loading="lazy" class="h-[72px] w-full object-cover lg:h-[220px]" />
+					<img src={p.img} alt={p.name} loading="lazy" class="h-[72px] w-full object-cover lg:h-[280px]" />
 					<div class="flex items-center justify-between px-2 py-1.5 lg:px-3 lg:py-3">
 						<span>
 							<span class="block text-[11px] font-semibold leading-tight lg:text-[15px]">{p.name}</span>
@@ -251,7 +251,7 @@
 	</section>
 
 	<!-- Newsletter -->
-	<section id="newsletter" class="px-4 pt-4 lg:px-10 lg:pt-6">
+	<section id="newsletter" class="px-4 pt-4 lg:px-16 lg:pt-6">
 		<div class="flex items-center gap-3 rounded-2xl bg-white p-4 shadow-sm lg:gap-4 lg:p-6">
 			<span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-sand lg:h-14 lg:w-14">
 				<svg viewBox="0 0 24 24" class="h-5 w-5 fill-none stroke-stone-800 lg:h-6 lg:w-6" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3.5 7 8.5 6 8.5-6" /></svg>
@@ -289,8 +289,8 @@
 		</div>
 	</section>
 
-	<!-- Footer -->
-	<footer class="px-6 pb-8 pt-6 text-center lg:px-10">
+	<!-- Footer (mt-auto: chhoti screen par bhi footer bottom se chipka rahega) -->
+	<footer class="mt-auto px-6 pb-8 pt-6 text-center lg:px-16">
 		<div class="flex items-center gap-3">
 			<span class="h-px flex-1 bg-stone-300"></span>
 			<p class="font-display text-[15px] font-bold lg:text-[18px]">Tina Style <span class="text-red-400">♥</span></p>
