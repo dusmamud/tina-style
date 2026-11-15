@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { fly } from 'svelte/transition';
 	import { reveal } from '$lib/reveal';
 	import { bag, toggleBag, bagSummary } from '$lib/bag.svelte';
 	import { products, posts, testimonials, galleryImages } from '$lib/data';
@@ -18,6 +19,7 @@
 
 	let email = $state('');
 	let subscribed = $state(false);
+	let menuOpen = $state(false);
 
 	function subscribe(e: SubmitEvent) {
 		e.preventDefault();
@@ -105,6 +107,48 @@
 		>
 			Good<br />Style<br />Good<br />Mood <span class="text-[22px] lg:text-[32px] xl:text-[36px]">♡</span>
 		</p>
+
+		<!-- ••• quick menu: mobile only (desktop has the header nav) -->
+		<button
+			type="button"
+			aria-label="More options"
+			aria-expanded={menuOpen}
+			onclick={() => (menuOpen = !menuOpen)}
+			class="absolute right-5 top-5 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/25 text-white backdrop-blur-sm transition active:scale-90 lg:hidden"
+		>
+			<span class="text-[16px] font-bold leading-none tracking-[0.08em]">•••</span>
+		</button>
+		{#if menuOpen}
+			<div
+				transition:fly={{ y: -6, duration: 180 }}
+				class="absolute right-5 top-[70px] z-10 w-[212px] rounded-xl bg-white/95 p-1.5 shadow-lg backdrop-blur lg:hidden"
+			>
+				<a
+					href="/shop"
+					onclick={() => (menuOpen = false)}
+					class="flex items-center gap-2.5 rounded-lg px-3 py-2.5 text-[13px] font-medium text-stone-700 hover:bg-stone-100"
+				>
+					<svg viewBox="0 0 24 24" class="h-4 w-4 fill-none stroke-stone-700" stroke-width="2"><path d="M6 8h12l-1 12H7L6 8Zm3 0V6a3 3 0 0 1 6 0v2" /></svg>
+					Shop my favorites
+				</a>
+				<a
+					href="/videos"
+					onclick={() => (menuOpen = false)}
+					class="flex items-center gap-2.5 rounded-lg px-3 py-2.5 text-[13px] font-medium text-stone-700 hover:bg-stone-100"
+				>
+					<svg viewBox="0 0 24 24" class="h-4 w-4 fill-stone-700"><path d="M8 5v14l11-7L8 5Z" /></svg>
+					Watch my latest vlog
+				</a>
+				<a
+					href="/#newsletter"
+					onclick={() => (menuOpen = false)}
+					class="flex items-center gap-2.5 rounded-lg px-3 py-2.5 text-[13px] font-medium text-stone-700 hover:bg-stone-100"
+				>
+					<svg viewBox="0 0 24 24" class="h-4 w-4 fill-none stroke-stone-700" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3.5 7 8.5 6 8.5-6" /></svg>
+					Join the newsletter
+				</a>
+			</div>
+		{/if}
 	</div>
 </header>
 

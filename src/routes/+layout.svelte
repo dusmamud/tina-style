@@ -1,6 +1,5 @@
 <script lang="ts">
 	import '../app.css';
-	import { fly } from 'svelte/transition';
 	import { page } from '$app/state';
 	import { bag } from '$lib/bag.svelte';
 	import { reveal } from '$lib/reveal';
@@ -8,7 +7,6 @@
 	import type { Snippet } from 'svelte';
 
 	let { children }: { children: Snippet } = $props();
-	let menuOpen = $state(false);
 
 	const links = [
 		{ label: 'Home', href: '/' },
@@ -21,8 +19,12 @@
 </script>
 
 <div id="top" class="flex min-h-screen w-full flex-col bg-cream">
-	<!-- Shared header: sticky, all pages, mobile hamburger + bag count -->
-	<header class="sticky top-0 z-40 border-b border-stone-200/70 bg-cream/90 backdrop-blur">
+	<!-- Shared header: DESKTOP ONLY, and NEVER on the home page (his order) —
+	     the landing page starts with the hero photo, like the original design.
+	     Inner pages keep the desktop header; mobile has no header anywhere —
+	     on mobile the links live in the footer + the ••• menu on the home hero photo. -->
+	{#if page.url.pathname !== '/'}
+		<header class="sticky top-0 z-40 hidden border-b border-stone-200/70 bg-cream/90 backdrop-blur lg:block">
 		<nav class="flex items-center justify-between px-4 py-3 sm:px-8 lg:px-16 xl:px-24" aria-label="Main">
 			<a href="/" class="font-display text-[20px] font-bold leading-none lg:text-[22px]"
 				>Tina Style <span class="text-red-400">♥</span></a
@@ -54,43 +56,10 @@
 						>
 					{/if}
 				</a>
-				<button
-					type="button"
-					aria-label="Menu"
-					aria-expanded={menuOpen}
-					onclick={() => (menuOpen = !menuOpen)}
-					class="flex h-10 w-10 items-center justify-center rounded-full border border-stone-300 bg-white/70 transition hover:bg-white active:scale-90 lg:hidden"
-				>
-					<svg viewBox="0 0 24 24" class="h-5 w-5 fill-none stroke-stone-800" stroke-width="2"
-						><path d="M4 7h16M4 12h16M4 17h16" /></svg
-					>
-				</button>
 			</div>
 		</nav>
-		{#if menuOpen}
-			<div
-				transition:fly={{ y: -6, duration: 180 }}
-				class="border-t border-stone-200/70 px-4 pb-4 pt-2 lg:hidden"
-			>
-				{#each links as l}
-					<a
-						href={l.href}
-						onclick={() => (menuOpen = false)}
-						class="block rounded-lg px-3 py-2.5 text-[15px] font-medium text-stone-700 hover:bg-white {page.url
-							.pathname === l.href
-							? 'font-semibold text-stone-900'
-							: ''}">{l.label}</a
-					>
-				{/each}
-				<a
-					href="/#newsletter"
-					onclick={() => (menuOpen = false)}
-					class="mt-1 block rounded-full bg-stone-900 px-4 py-2.5 text-center text-[14px] font-semibold text-white"
-					>Join the newsletter</a
-				>
-			</div>
-		{/if}
-	</header>
+		</header>
+	{/if}
 
 	<main class="flex-1">
 		{@render children()}
