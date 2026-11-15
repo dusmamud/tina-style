@@ -1,0 +1,1514 @@
+{
+  "320": {
+    "innerWidth": 320,
+    "scrollWidth": 320,
+    "scrollHeight": 1904,
+    "hOverflow": false,
+    "overflowEls": [],
+    "fonts": [
+      {
+        "label": "h1 (Tina Style)",
+        "tag": "H1",
+        "fontSize": "32px",
+        "lineHeight": "32px",
+        "text": "Tina Style"
+      },
+      {
+        "label": "h2 (Shop My Favorites)",
+        "tag": "H2",
+        "fontSize": "19px",
+        "lineHeight": "28.5px",
+        "text": "Shop My Favorites"
+      },
+      {
+        "label": "hero script text",
+        "tag": "P",
+        "fontSize": "34px",
+        "lineHeight": "32.3px",
+        "text": "GoodStyleGoodMood ♡"
+      },
+      {
+        "label": "link card title",
+        "tag": "SPAN",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "text": "My Outfits Shop my looks"
+      },
+      {
+        "label": "product name",
+        "tag": "SPAN",
+        "fontSize": "11px",
+        "lineHeight": "13.75px",
+        "text": "Sunglasses"
+      },
+      {
+        "label": "desktop nav link",
+        "tag": null,
+        "fontSize": null
+      },
+      {
+        "label": "footer brand",
+        "tag": "P",
+        "fontSize": "15px",
+        "lineHeight": "22.5px",
+        "text": "Tina Style ♥"
+      },
+      {
+        "label": "newsletter input",
+        "tag": "INPUT",
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "text": ""
+      },
+      {
+        "label": "subscribe button",
+        "tag": "BUTTON",
+        "fontSize": "11px",
+        "lineHeight": "16.5px",
+        "text": "Subscribe ›"
+      }
+    ],
+    "fold": {
+      "h1": {
+        "top": 484,
+        "bottom": 516,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "socials": {
+        "top": 600,
+        "bottom": 640,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "first section (profile/cards)": {
+        "top": 348,
+        "bottom": 640,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "vlog": {
+        "top": 996,
+        "bottom": 1208,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "shop": {
+        "top": 1208,
+        "bottom": 1642,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "newsletter": {
+        "top": 1642,
+        "bottom": 1780,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "footer": {
+        "top": 1780,
+        "bottom": 1904,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      }
+    },
+    "images": [
+      {
+        "src": "/images/avatar.jpg",
+        "ok": true,
+        "dw": 0,
+        "dh": 0
+      },
+      {
+        "src": "/images/hero.jpg",
+        "ok": true,
+        "dw": 320,
+        "dh": 420
+      },
+      {
+        "src": "/images/avatar.jpg",
+        "ok": true,
+        "dw": 124,
+        "dh": 124
+      },
+      {
+        "src": "/images/outfits.jpg",
+        "ok": true,
+        "dw": 138,
+        "dh": 120
+      },
+      {
+        "src": "/images/travel.jpg",
+        "ok": true,
+        "dw": 138,
+        "dh": 120
+      },
+      {
+        "src": "/images/beauty.webp",
+        "ok": true,
+        "dw": 138,
+        "dh": 120
+      },
+      {
+        "src": "/images/work.jpg",
+        "ok": true,
+        "dw": 138,
+        "dh": 120
+      },
+      {
+        "src": "/images/vlog-paris.jpg",
+        "ok": true,
+        "dw": 288,
+        "dh": 196
+      },
+      {
+        "src": "/images/sunglasses.webp",
+        "ok": true,
+        "dw": 138,
+        "dh": 140
+      },
+      {
+        "src": "/images/handbag.jpg",
+        "ok": true,
+        "dw": 138,
+        "dh": 140
+      },
+      {
+        "src": "/images/perfume.webp",
+        "ok": true,
+        "dw": 138,
+        "dh": 140
+      },
+      {
+        "src": "/images/makeup.webp",
+        "ok": true,
+        "dw": 138,
+        "dh": 140
+      }
+    ]
+  },
+  "360": {
+    "innerWidth": 360,
+    "scrollWidth": 360,
+    "scrollHeight": 1447,
+    "hOverflow": false,
+    "overflowEls": [],
+    "fonts": [
+      {
+        "label": "h1 (Tina Style)",
+        "tag": "H1",
+        "fontSize": "32px",
+        "lineHeight": "32px",
+        "text": "Tina Style"
+      },
+      {
+        "label": "h2 (Shop My Favorites)",
+        "tag": "H2",
+        "fontSize": "19px",
+        "lineHeight": "28.5px",
+        "text": "Shop My Favorites"
+      },
+      {
+        "label": "hero script text",
+        "tag": "P",
+        "fontSize": "34px",
+        "lineHeight": "32.3px",
+        "text": "GoodStyleGoodMood ♡"
+      },
+      {
+        "label": "link card title",
+        "tag": "SPAN",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "text": "My Outfits Shop my looks"
+      },
+      {
+        "label": "product name",
+        "tag": "SPAN",
+        "fontSize": "11px",
+        "lineHeight": "13.75px",
+        "text": "Sunglasses"
+      },
+      {
+        "label": "desktop nav link",
+        "tag": null,
+        "fontSize": null
+      },
+      {
+        "label": "footer brand",
+        "tag": "P",
+        "fontSize": "15px",
+        "lineHeight": "22.5px",
+        "text": "Tina Style ♥"
+      },
+      {
+        "label": "newsletter input",
+        "tag": "INPUT",
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "text": ""
+      },
+      {
+        "label": "subscribe button",
+        "tag": "BUTTON",
+        "fontSize": "11px",
+        "lineHeight": "16.5px",
+        "text": "Subscribe ›"
+      }
+    ],
+    "fold": {
+      "h1": {
+        "top": 484,
+        "bottom": 516,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "socials": {
+        "top": 600,
+        "bottom": 640,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "first section (profile/cards)": {
+        "top": 348,
+        "bottom": 640,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "vlog": {
+        "top": 786,
+        "bottom": 998,
+        "visibleInFold": false,
+        "partiallyVisible": true
+      },
+      "shop": {
+        "top": 998,
+        "bottom": 1185,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "newsletter": {
+        "top": 1185,
+        "bottom": 1323,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "footer": {
+        "top": 1323,
+        "bottom": 1447,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      }
+    },
+    "images": [
+      {
+        "src": "/images/avatar.jpg",
+        "ok": true,
+        "dw": 0,
+        "dh": 0
+      },
+      {
+        "src": "/images/hero.jpg",
+        "ok": true,
+        "dw": 360,
+        "dh": 420
+      },
+      {
+        "src": "/images/avatar.jpg",
+        "ok": true,
+        "dw": 124,
+        "dh": 124
+      },
+      {
+        "src": "/images/outfits.jpg",
+        "ok": true,
+        "dw": 76,
+        "dh": 64
+      },
+      {
+        "src": "/images/travel.jpg",
+        "ok": true,
+        "dw": 76,
+        "dh": 64
+      },
+      {
+        "src": "/images/beauty.webp",
+        "ok": true,
+        "dw": 76,
+        "dh": 64
+      },
+      {
+        "src": "/images/work.jpg",
+        "ok": true,
+        "dw": 76,
+        "dh": 64
+      },
+      {
+        "src": "/images/vlog-paris.jpg",
+        "ok": true,
+        "dw": 328,
+        "dh": 196
+      },
+      {
+        "src": "/images/sunglasses.webp",
+        "ok": true,
+        "dw": 76,
+        "dh": 72
+      },
+      {
+        "src": "/images/handbag.jpg",
+        "ok": true,
+        "dw": 76,
+        "dh": 72
+      },
+      {
+        "src": "/images/perfume.webp",
+        "ok": true,
+        "dw": 76,
+        "dh": 72
+      },
+      {
+        "src": "/images/makeup.webp",
+        "ok": true,
+        "dw": 76,
+        "dh": 72
+      }
+    ]
+  },
+  "390": {
+    "innerWidth": 390,
+    "scrollWidth": 390,
+    "scrollHeight": 1431,
+    "hOverflow": false,
+    "overflowEls": [],
+    "fonts": [
+      {
+        "label": "h1 (Tina Style)",
+        "tag": "H1",
+        "fontSize": "32px",
+        "lineHeight": "32px",
+        "text": "Tina Style"
+      },
+      {
+        "label": "h2 (Shop My Favorites)",
+        "tag": "H2",
+        "fontSize": "19px",
+        "lineHeight": "28.5px",
+        "text": "Shop My Favorites"
+      },
+      {
+        "label": "hero script text",
+        "tag": "P",
+        "fontSize": "34px",
+        "lineHeight": "32.3px",
+        "text": "GoodStyleGoodMood ♡"
+      },
+      {
+        "label": "link card title",
+        "tag": "SPAN",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "text": "My Outfits Shop my looks"
+      },
+      {
+        "label": "product name",
+        "tag": "SPAN",
+        "fontSize": "11px",
+        "lineHeight": "13.75px",
+        "text": "Sunglasses"
+      },
+      {
+        "label": "desktop nav link",
+        "tag": null,
+        "fontSize": null
+      },
+      {
+        "label": "footer brand",
+        "tag": "P",
+        "fontSize": "15px",
+        "lineHeight": "22.5px",
+        "text": "Tina Style ♥"
+      },
+      {
+        "label": "newsletter input",
+        "tag": "INPUT",
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "text": ""
+      },
+      {
+        "label": "subscribe button",
+        "tag": "BUTTON",
+        "fontSize": "11px",
+        "lineHeight": "16.5px",
+        "text": "Subscribe ›"
+      }
+    ],
+    "fold": {
+      "h1": {
+        "top": 484,
+        "bottom": 516,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "socials": {
+        "top": 600,
+        "bottom": 640,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "first section (profile/cards)": {
+        "top": 348,
+        "bottom": 640,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "vlog": {
+        "top": 786,
+        "bottom": 998,
+        "visibleInFold": false,
+        "partiallyVisible": true
+      },
+      "shop": {
+        "top": 998,
+        "bottom": 1185,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "newsletter": {
+        "top": 1185,
+        "bottom": 1308,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "footer": {
+        "top": 1308,
+        "bottom": 1431,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      }
+    },
+    "images": [
+      {
+        "src": "/images/avatar.jpg",
+        "ok": true,
+        "dw": 0,
+        "dh": 0
+      },
+      {
+        "src": "/images/hero.jpg",
+        "ok": true,
+        "dw": 390,
+        "dh": 420
+      },
+      {
+        "src": "/images/avatar.jpg",
+        "ok": true,
+        "dw": 124,
+        "dh": 124
+      },
+      {
+        "src": "/images/outfits.jpg",
+        "ok": true,
+        "dw": 84,
+        "dh": 64
+      },
+      {
+        "src": "/images/travel.jpg",
+        "ok": true,
+        "dw": 84,
+        "dh": 64
+      },
+      {
+        "src": "/images/beauty.webp",
+        "ok": true,
+        "dw": 84,
+        "dh": 64
+      },
+      {
+        "src": "/images/work.jpg",
+        "ok": true,
+        "dw": 84,
+        "dh": 64
+      },
+      {
+        "src": "/images/vlog-paris.jpg",
+        "ok": true,
+        "dw": 358,
+        "dh": 196
+      },
+      {
+        "src": "/images/sunglasses.webp",
+        "ok": true,
+        "dw": 84,
+        "dh": 72
+      },
+      {
+        "src": "/images/handbag.jpg",
+        "ok": true,
+        "dw": 84,
+        "dh": 72
+      },
+      {
+        "src": "/images/perfume.webp",
+        "ok": true,
+        "dw": 84,
+        "dh": 72
+      },
+      {
+        "src": "/images/makeup.webp",
+        "ok": true,
+        "dw": 84,
+        "dh": 72
+      }
+    ]
+  },
+  "768": {
+    "innerWidth": 768,
+    "scrollWidth": 768,
+    "scrollHeight": 1846,
+    "hOverflow": false,
+    "overflowEls": [],
+    "fonts": [
+      {
+        "label": "h1 (Tina Style)",
+        "tag": "H1",
+        "fontSize": "38px",
+        "lineHeight": "38px",
+        "text": "Tina Style"
+      },
+      {
+        "label": "h2 (Shop My Favorites)",
+        "tag": "H2",
+        "fontSize": "24px",
+        "lineHeight": "36px",
+        "text": "Shop My Favorites"
+      },
+      {
+        "label": "hero script text",
+        "tag": "P",
+        "fontSize": "34px",
+        "lineHeight": "32.3px",
+        "text": "GoodStyleGoodMood ♡"
+      },
+      {
+        "label": "link card title",
+        "tag": "SPAN",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "text": "My Outfits Shop my looks"
+      },
+      {
+        "label": "product name",
+        "tag": "SPAN",
+        "fontSize": "13px",
+        "lineHeight": "16.25px",
+        "text": "Sunglasses"
+      },
+      {
+        "label": "desktop nav link",
+        "tag": null,
+        "fontSize": null
+      },
+      {
+        "label": "footer brand",
+        "tag": "P",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "text": "Tina Style ♥"
+      },
+      {
+        "label": "newsletter input",
+        "tag": "INPUT",
+        "fontSize": "13px",
+        "lineHeight": "19.5px",
+        "text": ""
+      },
+      {
+        "label": "subscribe button",
+        "tag": "BUTTON",
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "text": "Subscribe ›"
+      }
+    ],
+    "fold": {
+      "h1": {
+        "top": 600,
+        "bottom": 638,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "socials": {
+        "top": 733,
+        "bottom": 777,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "first section (profile/cards)": {
+        "top": 448,
+        "bottom": 777,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "vlog": {
+        "top": 987,
+        "bottom": 1303,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "shop": {
+        "top": 1303,
+        "bottom": 1578,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "newsletter": {
+        "top": 1578,
+        "bottom": 1718,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "footer": {
+        "top": 1718,
+        "bottom": 1846,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      }
+    },
+    "images": [
+      {
+        "src": "/images/avatar.jpg",
+        "ok": true,
+        "dw": 0,
+        "dh": 0
+      },
+      {
+        "src": "/images/hero.jpg",
+        "ok": true,
+        "dw": 768,
+        "dh": 520
+      },
+      {
+        "src": "/images/avatar.jpg",
+        "ok": true,
+        "dw": 140,
+        "dh": 140
+      },
+      {
+        "src": "/images/outfits.jpg",
+        "ok": true,
+        "dw": 170,
+        "dh": 140
+      },
+      {
+        "src": "/images/travel.jpg",
+        "ok": true,
+        "dw": 170,
+        "dh": 140
+      },
+      {
+        "src": "/images/beauty.webp",
+        "ok": true,
+        "dw": 170,
+        "dh": 140
+      },
+      {
+        "src": "/images/work.jpg",
+        "ok": true,
+        "dw": 170,
+        "dh": 140
+      },
+      {
+        "src": "/images/vlog-paris.jpg",
+        "ok": true,
+        "dw": 704,
+        "dh": 300
+      },
+      {
+        "src": "/images/sunglasses.webp",
+        "ok": true,
+        "dw": 170,
+        "dh": 160
+      },
+      {
+        "src": "/images/handbag.jpg",
+        "ok": true,
+        "dw": 170,
+        "dh": 160
+      },
+      {
+        "src": "/images/perfume.webp",
+        "ok": true,
+        "dw": 170,
+        "dh": 160
+      },
+      {
+        "src": "/images/makeup.webp",
+        "ok": true,
+        "dw": 170,
+        "dh": 160
+      }
+    ]
+  },
+  "1024": {
+    "innerWidth": 1024,
+    "scrollWidth": 1024,
+    "scrollHeight": 2112,
+    "hOverflow": false,
+    "overflowEls": [],
+    "fonts": [
+      {
+        "label": "h1 (Tina Style)",
+        "tag": "H1",
+        "fontSize": "48px",
+        "lineHeight": "48px",
+        "text": "Tina Style"
+      },
+      {
+        "label": "h2 (Shop My Favorites)",
+        "tag": "H2",
+        "fontSize": "28px",
+        "lineHeight": "42px",
+        "text": "Shop My Favorites"
+      },
+      {
+        "label": "hero script text",
+        "tag": "P",
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "text": "FASHION  •  LIFESTYLE  •  TRAV"
+      },
+      {
+        "label": "link card title",
+        "tag": "SPAN",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "text": "My Outfits Shop my looks"
+      },
+      {
+        "label": "product name",
+        "tag": "SPAN",
+        "fontSize": "15px",
+        "lineHeight": "18.75px",
+        "text": "Sunglasses"
+      },
+      {
+        "label": "desktop nav link",
+        "tag": "A",
+        "fontSize": "22px",
+        "lineHeight": "33px",
+        "text": "Tina Style ♥"
+      },
+      {
+        "label": "footer brand",
+        "tag": "P",
+        "fontSize": "18px",
+        "lineHeight": "27px",
+        "text": "Tina Style ♥"
+      },
+      {
+        "label": "newsletter input",
+        "tag": "INPUT",
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "text": ""
+      },
+      {
+        "label": "subscribe button",
+        "tag": "BUTTON",
+        "fontSize": "13px",
+        "lineHeight": "19.5px",
+        "text": "Subscribe ›"
+      }
+    ],
+    "fold": {
+      "h1": {
+        "top": 293,
+        "bottom": 341,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "socials": {
+        "top": 444,
+        "bottom": 488,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "first section (profile/cards)": {
+        "top": 629,
+        "bottom": 939,
+        "visibleInFold": false,
+        "partiallyVisible": true
+      },
+      "vlog": {
+        "top": 939,
+        "bottom": 1383,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "shop": {
+        "top": 1383,
+        "bottom": 1811,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "newsletter": {
+        "top": 1811,
+        "bottom": 1981,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "footer": {
+        "top": 1981,
+        "bottom": 2112,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      }
+    },
+    "images": [
+      {
+        "src": "/images/avatar.jpg",
+        "ok": true,
+        "dw": 128,
+        "dh": 128
+      },
+      {
+        "src": "/images/hero.jpg",
+        "ok": true,
+        "dw": 536,
+        "dh": 560
+      },
+      {
+        "src": "/images/avatar.jpg",
+        "ok": true,
+        "dw": 0,
+        "dh": 0
+      },
+      {
+        "src": "/images/outfits.jpg",
+        "ok": true,
+        "dw": 212,
+        "dh": 220
+      },
+      {
+        "src": "/images/travel.jpg",
+        "ok": true,
+        "dw": 212,
+        "dh": 220
+      },
+      {
+        "src": "/images/beauty.webp",
+        "ok": true,
+        "dw": 212,
+        "dh": 220
+      },
+      {
+        "src": "/images/work.jpg",
+        "ok": true,
+        "dw": 212,
+        "dh": 220
+      },
+      {
+        "src": "/images/vlog-paris.jpg",
+        "ok": true,
+        "dw": 896,
+        "dh": 420
+      },
+      {
+        "src": "/images/sunglasses.webp",
+        "ok": true,
+        "dw": 212,
+        "dh": 280
+      },
+      {
+        "src": "/images/handbag.jpg",
+        "ok": true,
+        "dw": 212,
+        "dh": 280
+      },
+      {
+        "src": "/images/perfume.webp",
+        "ok": true,
+        "dw": 212,
+        "dh": 280
+      },
+      {
+        "src": "/images/makeup.webp",
+        "ok": true,
+        "dw": 212,
+        "dh": 280
+      }
+    ]
+  },
+  "1280": {
+    "innerWidth": 1280,
+    "scrollWidth": 1280,
+    "scrollHeight": 2340,
+    "hOverflow": false,
+    "overflowEls": [],
+    "fonts": [
+      {
+        "label": "h1 (Tina Style)",
+        "tag": "H1",
+        "fontSize": "60px",
+        "lineHeight": "60px",
+        "text": "Tina Style"
+      },
+      {
+        "label": "h2 (Shop My Favorites)",
+        "tag": "H2",
+        "fontSize": "32px",
+        "lineHeight": "48px",
+        "text": "Shop My Favorites"
+      },
+      {
+        "label": "hero script text",
+        "tag": "P",
+        "fontSize": "13px",
+        "lineHeight": "19.5px",
+        "text": "FASHION  •  LIFESTYLE  •  TRAV"
+      },
+      {
+        "label": "link card title",
+        "tag": "SPAN",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "text": "My Outfits Shop my looks"
+      },
+      {
+        "label": "product name",
+        "tag": "SPAN",
+        "fontSize": "15px",
+        "lineHeight": "18.75px",
+        "text": "Sunglasses"
+      },
+      {
+        "label": "desktop nav link",
+        "tag": "A",
+        "fontSize": "24px",
+        "lineHeight": "36px",
+        "text": "Tina Style ♥"
+      },
+      {
+        "label": "footer brand",
+        "tag": "P",
+        "fontSize": "18px",
+        "lineHeight": "27px",
+        "text": "Tina Style ♥"
+      },
+      {
+        "label": "newsletter input",
+        "tag": "INPUT",
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "text": ""
+      },
+      {
+        "label": "subscribe button",
+        "tag": "BUTTON",
+        "fontSize": "13px",
+        "lineHeight": "19.5px",
+        "text": "Subscribe ›"
+      }
+    ],
+    "fold": {
+      "h1": {
+        "top": 337,
+        "bottom": 397,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "socials": {
+        "top": 507,
+        "bottom": 551,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "first section (profile/cards)": {
+        "top": 711,
+        "bottom": 1060,
+        "visibleInFold": false,
+        "partiallyVisible": true
+      },
+      "vlog": {
+        "top": 1060,
+        "bottom": 1564,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "shop": {
+        "top": 1564,
+        "bottom": 2039,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "newsletter": {
+        "top": 2039,
+        "bottom": 2209,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "footer": {
+        "top": 2209,
+        "bottom": 2340,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      }
+    },
+    "images": [
+      {
+        "src": "/images/avatar.jpg",
+        "ok": true,
+        "dw": 160,
+        "dh": 160
+      },
+      {
+        "src": "/images/hero.jpg",
+        "ok": true,
+        "dw": 670,
+        "dh": 640
+      },
+      {
+        "src": "/images/avatar.jpg",
+        "ok": true,
+        "dw": 0,
+        "dh": 0
+      },
+      {
+        "src": "/images/outfits.jpg",
+        "ok": true,
+        "dw": 260,
+        "dh": 260
+      },
+      {
+        "src": "/images/travel.jpg",
+        "ok": true,
+        "dw": 260,
+        "dh": 260
+      },
+      {
+        "src": "/images/beauty.webp",
+        "ok": true,
+        "dw": 260,
+        "dh": 260
+      },
+      {
+        "src": "/images/work.jpg",
+        "ok": true,
+        "dw": 260,
+        "dh": 260
+      },
+      {
+        "src": "/images/vlog-paris.jpg",
+        "ok": true,
+        "dw": 1088,
+        "dh": 480
+      },
+      {
+        "src": "/images/sunglasses.webp",
+        "ok": true,
+        "dw": 260,
+        "dh": 320
+      },
+      {
+        "src": "/images/handbag.jpg",
+        "ok": true,
+        "dw": 260,
+        "dh": 320
+      },
+      {
+        "src": "/images/perfume.webp",
+        "ok": true,
+        "dw": 260,
+        "dh": 320
+      },
+      {
+        "src": "/images/makeup.webp",
+        "ok": true,
+        "dw": 260,
+        "dh": 320
+      }
+    ]
+  },
+  "1440": {
+    "innerWidth": 1440,
+    "scrollWidth": 1440,
+    "scrollHeight": 2340,
+    "hOverflow": false,
+    "overflowEls": [],
+    "fonts": [
+      {
+        "label": "h1 (Tina Style)",
+        "tag": "H1",
+        "fontSize": "60px",
+        "lineHeight": "60px",
+        "text": "Tina Style"
+      },
+      {
+        "label": "h2 (Shop My Favorites)",
+        "tag": "H2",
+        "fontSize": "32px",
+        "lineHeight": "48px",
+        "text": "Shop My Favorites"
+      },
+      {
+        "label": "hero script text",
+        "tag": "P",
+        "fontSize": "13px",
+        "lineHeight": "19.5px",
+        "text": "FASHION  •  LIFESTYLE  •  TRAV"
+      },
+      {
+        "label": "link card title",
+        "tag": "SPAN",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "text": "My Outfits Shop my looks"
+      },
+      {
+        "label": "product name",
+        "tag": "SPAN",
+        "fontSize": "15px",
+        "lineHeight": "18.75px",
+        "text": "Sunglasses"
+      },
+      {
+        "label": "desktop nav link",
+        "tag": "A",
+        "fontSize": "24px",
+        "lineHeight": "36px",
+        "text": "Tina Style ♥"
+      },
+      {
+        "label": "footer brand",
+        "tag": "P",
+        "fontSize": "18px",
+        "lineHeight": "27px",
+        "text": "Tina Style ♥"
+      },
+      {
+        "label": "newsletter input",
+        "tag": "INPUT",
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "text": ""
+      },
+      {
+        "label": "subscribe button",
+        "tag": "BUTTON",
+        "fontSize": "13px",
+        "lineHeight": "19.5px",
+        "text": "Subscribe ›"
+      }
+    ],
+    "fold": {
+      "h1": {
+        "top": 337,
+        "bottom": 397,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "socials": {
+        "top": 507,
+        "bottom": 551,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "first section (profile/cards)": {
+        "top": 711,
+        "bottom": 1060,
+        "visibleInFold": false,
+        "partiallyVisible": true
+      },
+      "vlog": {
+        "top": 1060,
+        "bottom": 1564,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "shop": {
+        "top": 1564,
+        "bottom": 2039,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "newsletter": {
+        "top": 2039,
+        "bottom": 2209,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "footer": {
+        "top": 2209,
+        "bottom": 2340,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      }
+    },
+    "images": [
+      {
+        "src": "/images/avatar.jpg",
+        "ok": true,
+        "dw": 160,
+        "dh": 160
+      },
+      {
+        "src": "/images/hero.jpg",
+        "ok": true,
+        "dw": 754,
+        "dh": 640
+      },
+      {
+        "src": "/images/avatar.jpg",
+        "ok": true,
+        "dw": 0,
+        "dh": 0
+      },
+      {
+        "src": "/images/outfits.jpg",
+        "ok": true,
+        "dw": 300,
+        "dh": 260
+      },
+      {
+        "src": "/images/travel.jpg",
+        "ok": true,
+        "dw": 300,
+        "dh": 260
+      },
+      {
+        "src": "/images/beauty.webp",
+        "ok": true,
+        "dw": 300,
+        "dh": 260
+      },
+      {
+        "src": "/images/work.jpg",
+        "ok": true,
+        "dw": 300,
+        "dh": 260
+      },
+      {
+        "src": "/images/vlog-paris.jpg",
+        "ok": true,
+        "dw": 1248,
+        "dh": 480
+      },
+      {
+        "src": "/images/sunglasses.webp",
+        "ok": true,
+        "dw": 300,
+        "dh": 320
+      },
+      {
+        "src": "/images/handbag.jpg",
+        "ok": true,
+        "dw": 300,
+        "dh": 320
+      },
+      {
+        "src": "/images/perfume.webp",
+        "ok": true,
+        "dw": 300,
+        "dh": 320
+      },
+      {
+        "src": "/images/makeup.webp",
+        "ok": true,
+        "dw": 300,
+        "dh": 320
+      }
+    ]
+  },
+  "1920": {
+    "innerWidth": 1920,
+    "scrollWidth": 1920,
+    "scrollHeight": 2340,
+    "hOverflow": false,
+    "overflowEls": [],
+    "fonts": [
+      {
+        "label": "h1 (Tina Style)",
+        "tag": "H1",
+        "fontSize": "60px",
+        "lineHeight": "60px",
+        "text": "Tina Style"
+      },
+      {
+        "label": "h2 (Shop My Favorites)",
+        "tag": "H2",
+        "fontSize": "32px",
+        "lineHeight": "48px",
+        "text": "Shop My Favorites"
+      },
+      {
+        "label": "hero script text",
+        "tag": "P",
+        "fontSize": "13px",
+        "lineHeight": "19.5px",
+        "text": "FASHION  •  LIFESTYLE  •  TRAV"
+      },
+      {
+        "label": "link card title",
+        "tag": "SPAN",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "text": "My Outfits Shop my looks"
+      },
+      {
+        "label": "product name",
+        "tag": "SPAN",
+        "fontSize": "15px",
+        "lineHeight": "18.75px",
+        "text": "Sunglasses"
+      },
+      {
+        "label": "desktop nav link",
+        "tag": "A",
+        "fontSize": "24px",
+        "lineHeight": "36px",
+        "text": "Tina Style ♥"
+      },
+      {
+        "label": "footer brand",
+        "tag": "P",
+        "fontSize": "18px",
+        "lineHeight": "27px",
+        "text": "Tina Style ♥"
+      },
+      {
+        "label": "newsletter input",
+        "tag": "INPUT",
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "text": ""
+      },
+      {
+        "label": "subscribe button",
+        "tag": "BUTTON",
+        "fontSize": "13px",
+        "lineHeight": "19.5px",
+        "text": "Subscribe ›"
+      }
+    ],
+    "fold": {
+      "h1": {
+        "top": 337,
+        "bottom": 397,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "socials": {
+        "top": 507,
+        "bottom": 551,
+        "visibleInFold": true,
+        "partiallyVisible": false
+      },
+      "first section (profile/cards)": {
+        "top": 711,
+        "bottom": 1060,
+        "visibleInFold": false,
+        "partiallyVisible": true
+      },
+      "vlog": {
+        "top": 1060,
+        "bottom": 1564,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "shop": {
+        "top": 1564,
+        "bottom": 2039,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "newsletter": {
+        "top": 2039,
+        "bottom": 2209,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      },
+      "footer": {
+        "top": 2209,
+        "bottom": 2340,
+        "visibleInFold": false,
+        "partiallyVisible": false
+      }
+    },
+    "images": [
+      {
+        "src": "/images/avatar.jpg",
+        "ok": true,
+        "dw": 160,
+        "dh": 160
+      },
+      {
+        "src": "/images/hero.jpg",
+        "ok": true,
+        "dw": 1006,
+        "dh": 640
+      },
+      {
+        "src": "/images/avatar.jpg",
+        "ok": true,
+        "dw": 0,
+        "dh": 0
+      },
+      {
+        "src": "/images/outfits.jpg",
+        "ok": true,
+        "dw": 420,
+        "dh": 260
+      },
+      {
+        "src": "/images/travel.jpg",
+        "ok": true,
+        "dw": 420,
+        "dh": 260
+      },
+      {
+        "src": "/images/beauty.webp",
+        "ok": true,
+        "dw": 420,
+        "dh": 260
+      },
+      {
+        "src": "/images/work.jpg",
+        "ok": true,
+        "dw": 420,
+        "dh": 260
+      },
+      {
+        "src": "/images/vlog-paris.jpg",
+        "ok": true,
+        "dw": 1728,
+        "dh": 480
+      },
+      {
+        "src": "/images/sunglasses.webp",
+        "ok": true,
+        "dw": 420,
+        "dh": 320
+      },
+      {
+        "src": "/images/handbag.jpg",
+        "ok": true,
+        "dw": 420,
+        "dh": 320
+      },
+      {
+        "src": "/images/perfume.webp",
+        "ok": true,
+        "dw": 420,
+        "dh": 320
+      },
+      {
+        "src": "/images/makeup.webp",
+        "ok": true,
+        "dw": 420,
+        "dh": 320
+      }
+    ]
+  }
+}
