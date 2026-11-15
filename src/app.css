@@ -72,3 +72,59 @@ body {
 	color: var(--color-ink);
 	-webkit-font-smoothing: antialiased;
 }
+
+/* ---- Motion: entrance + reveal-on-scroll (mobile-first, transform/opacity only) ---- */
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	@keyframes hero-photo {
+		from { transform: scale(1.07); }
+		to { transform: scale(1); }
+	}
+	@keyframes fade-up {
+		from { opacity: 0; transform: translateY(18px); }
+		to { opacity: 1; transform: none; }
+	}
+	@keyframes scale-in {
+		from { opacity: 0; transform: scale(0.85); }
+		to { opacity: 1; transform: scale(1); }
+	}
+	@keyframes pulse-ring {
+		0% { transform: scale(1); opacity: 0.7; }
+		100% { transform: scale(1.5); opacity: 0; }
+	}
+
+	.anim-hero-photo { animation: hero-photo 1.4s cubic-bezier(0.22, 1, 0.36, 1) both; }
+	.anim-fade-up { animation: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both; }
+	.anim-scale-in { animation: scale-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; }
+	.anim-delay-1 { animation-delay: 0.1s; }
+	.anim-delay-2 { animation-delay: 0.2s; }
+	.anim-delay-3 { animation-delay: 0.3s; }
+	.anim-delay-4 { animation-delay: 0.45s; }
+	.anim-pulse-ring { animation: pulse-ring 2.4s ease-out infinite; }
+
+	/* Scroll reveal (class added by the `reveal` action in +page.svelte) */
+	.reveal {
+		opacity: 0;
+		transform: translateY(24px);
+		transition:
+			opacity 0.7s ease,
+			transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+		will-change: opacity, transform;
+	}
+	.reveal.is-visible {
+		opacity: 1;
+		transform: none;
+	}
+}
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+	.reveal {
+		opacity: 1;
+		transform: none;
+	}
+}

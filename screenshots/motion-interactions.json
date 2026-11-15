@@ -1,0 +1,57 @@
+{
+  "desktop console errors": {
+    "ok": true,
+    "detail": "none"
+  },
+  "fonts loaded": {
+    "ok": true,
+    "detail": "[\"Great Vibes 400 loaded\",\"Inter 400 loaded\",\"Inter 500 loaded\",\"Inter 600 loaded\",\"Inter 700 loaded\",\"Playfair Display 600 unloaded\",\"Playfair Display 700 loaded\"]"
+  },
+  "bag add 1 item": {
+    "ok": true,
+    "detail": "🛍️ 1 item in your bag: Sunglasses"
+  },
+  "bag add 2nd item": {
+    "ok": true,
+    "detail": "🛍️ 2 items in your bag: Sunglasses, Handbag"
+  },
+  "bag remove item": {
+    "ok": true,
+    "detail": "🛍️ 1 item in your bag: Handbag"
+  },
+  "newsletter rejects invalid email": {
+    "ok": true,
+    "detail": "stayed on form"
+  },
+  "newsletter accepts valid email": {
+    "ok": true,
+    "detail": "success msg + email shown"
+  },
+  "nav Travel Blog -> #vlog": {
+    "ok": true,
+    "detail": "hash=#vlog vlogTop=0"
+  },
+  "mobile console errors": {
+    "ok": true,
+    "detail": "none"
+  },
+  "mobile menu opens": {
+    "ok": true
+  },
+  "mobile menu link navigates + closes": {
+    "ok": true,
+    "detail": "hash=#vlog stillOpen=false"
+  },
+  "mobile card Travel Blog -> #vlog": {
+    "ok": true,
+    "detail": "hash=#vlog"
+  },
+  "scroll reveal all visible after scroll-through": {
+    "ok": true,
+    "detail": "12/12"
+  },
+  "reduced-motion: reveal elements opaque": {
+    "ok": true,
+    "detail": "12/12"
+  }
+}
