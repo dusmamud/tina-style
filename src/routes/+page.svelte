@@ -37,6 +37,22 @@
 		name="description"
 		content="Tina Style — sharing daily looks, travel spots and everything that makes life more beautiful."
 	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Tina Style — Fashion • Lifestyle • Travel" />
+	<meta
+		property="og:description"
+		content="Sharing my daily looks, travel spots and everything that makes life more beautiful."
+	/>
+	<meta property="og:url" content="https://tina-style.pages.dev/" />
+	<meta property="og:image" content="https://tina-style.pages.dev/images/hero.jpg" />
+	<meta property="og:image:alt" content="Tina Style — woman in a white blazer and sunglasses in warm sunlight" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Tina Style — Fashion • Lifestyle • Travel" />
+	<meta
+		name="twitter:description"
+		content="Sharing my daily looks, travel spots and everything that makes life more beautiful."
+	/>
+	<meta name="twitter:image" content="https://tina-style.pages.dev/images/hero.jpg" />
 </svelte:head>
 
 {#snippet socials(containerClass: string)}
@@ -61,7 +77,7 @@
 
 <!-- Full-bleed page, no side gaps. Hero: mobile = photo banner (420px) + profile below;
      desktop (lg+) = two-column hero, profile left + photo right, all visible in first screen. -->
-<div class="flex min-h-screen w-full flex-col bg-cream">
+<div id="top" class="flex min-h-screen w-full flex-col bg-cream">
 	<!-- Desktop top nav (mobile: hidden) -->
 	<nav class="hidden items-center justify-between px-16 py-4 lg:flex xl:px-24" aria-label="Main">
 		<a href="#top" class="font-display text-[22px] font-bold xl:text-[24px]">Tina Style <span class="text-red-400">♥</span></a>
@@ -330,7 +346,7 @@
 			<p class="font-display text-[15px] font-bold sm:text-[16px] lg:text-[18px]">Tina Style <span class="text-red-400">♥</span></p>
 			<span class="h-px flex-1 bg-stone-300"></span>
 		</div>
-		<p class="mt-2 text-[11px] text-stone-500 sm:text-[12px] lg:text-[12px]">© 2024 All rights reserved.</p>
+		<p class="mt-2 text-[11px] text-stone-500 sm:text-[12px] lg:text-[12px]">© 2026 All rights reserved.</p>
 		<p class="mt-1 text-[11px] text-stone-500 sm:text-[12px] lg:text-[12px]">
 			<a href="#top" class="hover:text-stone-900">Privacy</a>
 			<span class="mx-2 text-stone-300">|</span>
