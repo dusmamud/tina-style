@@ -2,7 +2,8 @@
 	import '../app.css';
 	import { fly } from 'svelte/transition';
 	import { page } from '$app/state';
-	import { bag } from '$lib/bag.svelte';
+	import { getCartCount, ui } from '$lib/bag.svelte';
+	import CartDrawer from '$lib/CartDrawer.svelte';
 	import { reveal } from '$lib/reveal';
 	import Socials from '$lib/Socials.svelte';
 	import type { Snippet } from 'svelte';
@@ -43,21 +44,22 @@
 				{/each}
 			</div>
 			<div class="flex items-center gap-2">
-				<a
-					href="/shop"
-					aria-label="Shopping bag, {bag.length} item{bag.length === 1 ? '' : 's'}"
+				<button
+					type="button"
+					aria-label="Shopping bag, {getCartCount()} item{getCartCount() === 1 ? '' : 's'}"
+					onclick={() => (ui.cartOpen = true)}
 					class="relative flex h-10 w-10 items-center justify-center rounded-full border border-stone-300 bg-white/70 transition hover:bg-white active:scale-90"
 				>
 					<svg viewBox="0 0 24 24" class="h-5 w-5 fill-none stroke-stone-800" stroke-width="1.8"
 						><path d="M6 8h12l-1 12H7L6 8Zm3 0V6a3 3 0 0 1 6 0v2" /></svg
 					>
-					{#if bag.length > 0}
+					{#if getCartCount() > 0}
 						<span
 							class="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-stone-900 text-[10px] font-bold text-white"
-							>{bag.length}</span
+							>{getCartCount()}</span
 						>
 					{/if}
-				</a>
+				</button>
 				<button
 					type="button"
 					aria-label="Menu"
@@ -100,6 +102,9 @@
 	<main class="flex-1">
 		{@render children()}
 	</main>
+
+	<!-- Cart drawer: available on every page -->
+	<CartDrawer />
 
 	<!-- Shared footer -->
 	<footer use:reveal class="mt-auto px-6 pb-8 pt-8 text-center sm:px-8 lg:px-16 xl:px-24">

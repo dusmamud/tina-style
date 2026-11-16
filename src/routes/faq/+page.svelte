@@ -6,16 +6,20 @@
 			title: 'Shopping',
 			qa: [
 				{
-					q: 'Where do the shop links go?',
-					a: 'Each product links to the store where I bought it. The links are affiliate links — if you buy through them, I may earn a small commission at no extra cost to you. It is how this site stays free, and I only link pieces I genuinely wear and love.'
+					q: 'How does ordering work?',
+					a: 'Pick a piece, add it to your bag, and check out right here — no account needed. You will get an order number and a confirmation page straight away. Checkout is a demo for now: no real payment is taken and nothing is shipped yet. Real payments (via a provider like Stripe) are the next step.'
+				},
+				{
+					q: 'What does shipping cost, and how long does it take?',
+					a: 'Standard shipping is $4.95 and takes 3–5 business days — free on orders over $75. Express shipping is $12.95 and takes 1–2 business days. You pick the method at checkout and see the exact cost before you pay.'
+				},
+				{
+					q: 'What is your returns policy?',
+					a: '30-day returns on unworn items in their original packaging. Write to hello@tinastyle.com with your order number and we will sort the return with you.'
 				},
 				{
 					q: 'What if a product is out of stock?',
 					a: 'Sizes and colours sell out fast on the pieces I post. If your size is gone, check back — I update links when items come back, and I often post a similar alternative on the Lookbook page.'
-				},
-				{
-					q: 'Do you ship internationally?',
-					a: 'I do not sell directly — purchases happen on the retailer’s site, so shipping, returns and delivery times depend on them. Each product page links to the store’s own shipping and returns policy.'
 				}
 			]
 		},

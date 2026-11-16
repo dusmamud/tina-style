@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { reveal } from '$lib/reveal';
-	import { bag, toggleBag, bagSummary } from '$lib/bag.svelte';
+	import { addToBag, removeFromBag, inBag, bagSummary, getCartCount } from '$lib/bag.svelte';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
 	const { product, more } = data;
-	const inBag = $derived(bag.includes(product.name));
+	const inCart = $derived(inBag(product.slug));
 </script>
 
 <svelte:head>
@@ -53,22 +53,22 @@
 
 				<button
 					type="button"
-					aria-label={inBag ? `Remove ${product.name} from bag` : `Add ${product.name} to bag`}
-					aria-pressed={inBag}
-					onclick={() => toggleBag(product.name)}
-					class="mt-6 w-full rounded-full py-3 text-[14px] font-semibold text-white transition active:scale-[0.98] sm:w-auto sm:px-8 {inBag
+					aria-label={inCart ? `Remove ${product.name} from bag` : `Add ${product.name} to bag`}
+					aria-pressed={inCart}
+					onclick={() => (inCart ? removeFromBag(product.slug) : addToBag(product.slug))}
+					class="mt-6 w-full rounded-full py-3 text-[14px] font-semibold text-white transition active:scale-[0.98] sm:w-auto sm:px-8 {inCart
 						? 'bg-emerald-600 hover:bg-emerald-700'
 						: 'bg-stone-900 hover:bg-stone-700'}"
 				>
-					{inBag ? '✓ Added to your bag' : 'Add to bag — ' + product.price}
+					{inCart ? '✓ Added to your bag' : 'Add to bag — ' + product.price}
 				</button>
-				{#if bag.length > 0}
+				{#if getCartCount() > 0}
 					<p class="mt-3 text-[12px] font-medium text-stone-600">{bagSummary()}</p>
 				{/if}
 
 				<p class="mt-5 text-[12px] leading-relaxed text-stone-500">
-					Prices in USD. This is an affiliate link — if you buy through it, I may earn a small commission
-					at no extra cost to you. Thank you for supporting Tina Style ♥
+					Prices in USD. Free standard shipping on orders over $75 · 30-day returns.
+					Checkout is a demo for now — no real payment is processed.
 				</p>
 				<a href="/shop" class="mt-4 inline-block text-[13px] font-semibold text-stone-900 hover:underline">← Back to all products</a>
 			</div>

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
 	import { reveal } from '$lib/reveal';
-	import { bag, toggleBag, bagSummary } from '$lib/bag.svelte';
+	import { toggleBag, inBag, bagSummary, getCartCount } from '$lib/bag.svelte';
 	import { products, posts, testimonials, galleryImages } from '$lib/data';
 	import Socials from '$lib/Socials.svelte';
 
@@ -240,7 +240,7 @@
 			View All Products ›
 		</a>
 	</div>
-	{#if bag.length > 0}
+	{#if getCartCount() > 0}
 		<p class="mt-1 text-[11px] font-medium text-stone-600 lg:text-[13px]">
 			{bagSummary()}
 		</p>
@@ -256,14 +256,14 @@
 					</span>
 					<button
 						type="button"
-						aria-label={bag.includes(p.name) ? `Remove ${p.name} from bag` : `Add ${p.name} to bag`}
-						aria-pressed={bag.includes(p.name)}
-						onclick={() => toggleBag(p.name)}
-						class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full {bag.includes(p.name)
+						aria-label={inBag(p.slug) ? `Remove ${p.name} from bag` : `Add ${p.name} to bag`}
+						aria-pressed={inBag(p.slug)}
+						onclick={() => toggleBag(p.slug)}
+						class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full {inBag(p.slug)
 							? 'bg-emerald-600 text-white'
 							: 'bg-stone-900 text-white'} transition hover:scale-110 active:scale-90 sm:h-8 sm:w-8 lg:h-9 lg:w-9"
 					>
-						{#if bag.includes(p.name)}
+						{#if inBag(p.slug)}
 							<svg viewBox="0 0 24 24" class="h-3.5 w-3.5 fill-none stroke-white lg:h-4 lg:w-4" stroke-width="2.5"><path d="m5 13 4 4L19 7" /></svg>
 						{:else}
 							<svg viewBox="0 0 24 24" class="h-3.5 w-3.5 fill-none stroke-white lg:h-4 lg:w-4" stroke-width="2"><path d="M6 8h12l-1 12H7L6 8Zm3 0V6a3 3 0 0 1 6 0v2" /></svg>

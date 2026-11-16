@@ -31,11 +31,13 @@
 				</p>
 			</section>
 			<section use:reveal>
-				<h2 class="font-display text-[20px] font-bold text-stone-900">3. Shopping links &amp; affiliate disclosure</h2>
+				<h2 class="font-display text-[20px] font-bold text-stone-900">3. Shopping &amp; demo checkout</h2>
 				<p class="mt-2">
-					Some product links are affiliate links. If you buy through them, I may earn a small commission
-					at no extra cost to you. Prices and availability are set by the shops themselves and can change
-					without notice.
+					You can browse products, fill a bag, and complete a checkout on this site. Checkout is a demo
+					for now: no real payment is processed, no card details are sent or stored, and no order is
+					shipped. Prices are in USD. Standard shipping is $4.95 (free over $75) and express shipping is
+					$12.95. Returns are accepted within 30 days on unworn items in their original packaging — write
+					to hello@tinastyle.com with your order number.
 				</p>
 			</section>
 			<section use:reveal>

@@ -6,6 +6,7 @@ export type Product = {
 	name: string;
 	slug: string;
 	price: string;
+	amount: number;
 	img: string;
 	category: string;
 	desc: string;
@@ -28,6 +29,7 @@ export const products: Product[] = [
 		name: 'Sunglasses',
 		slug: 'sunglasses',
 		price: '$49.00',
+		amount: 49,
 		img: '/images/sunglasses.webp',
 		category: 'Accessories',
 		desc: 'Oversized frames with a soft tortoiseshell finish — the pair I reach for on every sunny day. Lightweight, flattering on most face shapes, and they make even a plain outfit feel finished.',
@@ -37,6 +39,7 @@ export const products: Product[] = [
 		name: 'Handbag',
 		slug: 'handbag',
 		price: '$89.00',
+		amount: 89,
 		img: '/images/handbag.jpg',
 		category: 'Bags',
 		desc: 'A structured everyday bag in warm tan leather — big enough for the essentials, small enough to carry everywhere. The one I have taken to Paris, Santorini, and every airport in between.',
@@ -46,6 +49,7 @@ export const products: Product[] = [
 		name: 'Perfume',
 		slug: 'perfume',
 		price: '$59.00',
+		amount: 59,
 		img: '/images/perfume.webp',
 		category: 'Beauty',
 		desc: 'My signature scent: soft florals with a warm vanilla base. It is the one people stop me to ask about — light enough for daytime, warm enough for evenings.',
@@ -55,6 +59,7 @@ export const products: Product[] = [
 		name: 'Makeup Set',
 		slug: 'makeup-set',
 		price: '$39.00',
+		amount: 39,
 		img: '/images/makeup.webp',
 		category: 'Beauty',
 		desc: 'The five pieces I use in my everyday routine — the exact set from my morning makeup vlog. Everything you need for a fresh, natural look in under ten minutes.',
@@ -64,6 +69,7 @@ export const products: Product[] = [
 		name: 'Silk Scarf',
 		slug: 'silk-scarf',
 		price: '$35.00',
+		amount: 35,
 		img: '/images/scarf.jpg',
 		category: 'Accessories',
 		desc: 'A soft silk scarf in a warm neutral print — wear it around your neck, in your hair, or tied to your bag. The easiest way to make a simple outfit look considered.',
@@ -73,6 +79,7 @@ export const products: Product[] = [
 		name: 'Gold Earrings',
 		slug: 'gold-earrings',
 		price: '$29.00',
+		amount: 29,
 		img: '/images/earrings.webp',
 		category: 'Accessories',
 		desc: 'Delicate gold hoops that go with literally everything — jeans, dresses, a white blazer. Light enough to wear all day, polished enough for dinner.',
@@ -82,6 +89,7 @@ export const products: Product[] = [
 		name: 'Leather Tote',
 		slug: 'leather-tote',
 		price: '$65.00',
+		amount: 65,
 		img: '/images/tote.webp',
 		category: 'Bags',
 		desc: 'My carry-everything tote: laptop, book, water bottle, and still room for a scarf. Structured enough to stand on its own, soft enough to carry all day.',
@@ -91,6 +99,7 @@ export const products: Product[] = [
 		name: 'Lipstick Set',
 		slug: 'lipstick-set',
 		price: '$24.00',
+		amount: 24,
 		img: '/images/lipstick.webp',
 		category: 'Beauty',
 		desc: 'Three everyday shades — a soft nude, a warm rose, and a classic red. Creamy, comfortable, and the kind of set that lives in every bag I own.',
