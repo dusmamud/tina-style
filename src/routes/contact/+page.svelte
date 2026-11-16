@@ -32,6 +32,7 @@
 			<h1 class="mt-2 font-display text-[32px] font-bold leading-tight sm:text-[40px] lg:text-[48px]">Let’s Create Together</h1>
 			<p class="mx-auto mt-2 max-w-[520px] text-[14px] leading-relaxed text-stone-600">
 				Brand collaborations, sponsored trips, product reviews &amp; more — tell me about your idea.
+				Already checked the <a href="/faq" class="font-semibold text-stone-900 hover:underline">FAQ</a>?
 			</p>
 		</div>
 

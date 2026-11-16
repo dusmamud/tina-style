@@ -2,7 +2,15 @@
 // NOTE: follower counts, view counts and prices are demo placeholders —
 // replace with real numbers/links when Tina's real profiles are connected.
 
-export type Product = { name: string; price: string; img: string; category: string };
+export type Product = {
+	name: string;
+	slug: string;
+	price: string;
+	img: string;
+	category: string;
+	desc: string;
+	details: string[];
+};
 export type Post = {
 	slug: string;
 	title: string;
@@ -16,14 +24,78 @@ export type Post = {
 export type Video = { title: string; img: string; duration: string; views: string; desc: string };
 
 export const products: Product[] = [
-	{ name: 'Sunglasses', price: '$49.00', img: '/images/sunglasses.webp', category: 'Accessories' },
-	{ name: 'Handbag', price: '$89.00', img: '/images/handbag.jpg', category: 'Bags' },
-	{ name: 'Perfume', price: '$59.00', img: '/images/perfume.webp', category: 'Beauty' },
-	{ name: 'Makeup Set', price: '$39.00', img: '/images/makeup.webp', category: 'Beauty' },
-	{ name: 'Silk Scarf', price: '$35.00', img: '/images/scarf.jpg', category: 'Accessories' },
-	{ name: 'Gold Earrings', price: '$29.00', img: '/images/earrings.webp', category: 'Accessories' },
-	{ name: 'Leather Tote', price: '$65.00', img: '/images/tote.webp', category: 'Bags' },
-	{ name: 'Lipstick Set', price: '$24.00', img: '/images/lipstick.webp', category: 'Beauty' }
+	{
+		name: 'Sunglasses',
+		slug: 'sunglasses',
+		price: '$49.00',
+		img: '/images/sunglasses.webp',
+		category: 'Accessories',
+		desc: 'Oversized frames with a soft tortoiseshell finish — the pair I reach for on every sunny day. Lightweight, flattering on most face shapes, and they make even a plain outfit feel finished.',
+		details: ['UV400 protection lenses', 'Lightweight acetate frames', 'Includes a hard case + cleaning cloth', 'One size — fits most faces']
+	},
+	{
+		name: 'Handbag',
+		slug: 'handbag',
+		price: '$89.00',
+		img: '/images/handbag.jpg',
+		category: 'Bags',
+		desc: 'A structured everyday bag in warm tan leather — big enough for the essentials, small enough to carry everywhere. The one I have taken to Paris, Santorini, and every airport in between.',
+		details: ['Genuine leather, tan finish', 'Fits phone, wallet, keys + a small book', 'Adjustable shoulder strap', 'Interior zip pocket']
+	},
+	{
+		name: 'Perfume',
+		slug: 'perfume',
+		price: '$59.00',
+		img: '/images/perfume.webp',
+		category: 'Beauty',
+		desc: 'My signature scent: soft florals with a warm vanilla base. It is the one people stop me to ask about — light enough for daytime, warm enough for evenings.',
+		details: ['Eau de parfum, 50ml', 'Notes: jasmine, peony, vanilla', 'Lasts 6–8 hours on skin', 'Cruelty-free']
+	},
+	{
+		name: 'Makeup Set',
+		slug: 'makeup-set',
+		price: '$39.00',
+		img: '/images/makeup.webp',
+		category: 'Beauty',
+		desc: 'The five pieces I use in my everyday routine — the exact set from my morning makeup vlog. Everything you need for a fresh, natural look in under ten minutes.',
+		details: ['5-piece set: tint, blush, mascara, liner + lip', 'Natural, buildable coverage', 'Suits most skin tones', 'Travel-friendly pouch included']
+	},
+	{
+		name: 'Silk Scarf',
+		slug: 'silk-scarf',
+		price: '$35.00',
+		img: '/images/scarf.jpg',
+		category: 'Accessories',
+		desc: 'A soft silk scarf in a warm neutral print — wear it around your neck, in your hair, or tied to your bag. The easiest way to make a simple outfit look considered.',
+		details: ['100% mulberry silk', '90 × 90 cm', 'Hand-rolled edges', 'Neutral print — pairs with everything']
+	},
+	{
+		name: 'Gold Earrings',
+		slug: 'gold-earrings',
+		price: '$29.00',
+		img: '/images/earrings.webp',
+		category: 'Accessories',
+		desc: 'Delicate gold hoops that go with literally everything — jeans, dresses, a white blazer. Light enough to wear all day, polished enough for dinner.',
+		details: ['14k gold-plated, hypoallergenic', 'Lightweight — comfortable all day', 'Tarnish-resistant coating', 'Gift box included']
+	},
+	{
+		name: 'Leather Tote',
+		slug: 'leather-tote',
+		price: '$65.00',
+		img: '/images/tote.webp',
+		category: 'Bags',
+		desc: 'My carry-everything tote: laptop, book, water bottle, and still room for a scarf. Structured enough to stand on its own, soft enough to carry all day.',
+		details: ['Genuine leather, black', 'Fits a 13" laptop', 'Interior + exterior pockets', 'Reinforced handles']
+	},
+	{
+		name: 'Lipstick Set',
+		slug: 'lipstick-set',
+		price: '$24.00',
+		img: '/images/lipstick.webp',
+		category: 'Beauty',
+		desc: 'Three everyday shades — a soft nude, a warm rose, and a classic red. Creamy, comfortable, and the kind of set that lives in every bag I own.',
+		details: ['3 shades: nude, rose, red', 'Creamy matte finish', 'Comfortable wear, 4–6 hours', 'Enriched with shea butter']
+	}
 ];
 
 export const productCategories = ['All', 'Accessories', 'Bags', 'Beauty'];
@@ -162,4 +234,15 @@ export const galleryImages = [
 	{ img: '/images/beauty.webp', alt: 'Makeup brushes flat lay' },
 	{ img: '/images/vlog-paris.jpg', alt: 'Paris vlog — Eiffel Tower at golden hour' },
 	{ img: '/images/work.jpg', alt: 'Tina working at her desk' }
+];
+
+export type Look = { title: string; occasion: string; img: string; items: string[] };
+
+export const looks: Look[] = [
+	{ title: 'White Blazer, Golden Hour', occasion: 'City day out', img: '/images/hero.jpg', items: ['Sunglasses', 'Gold Earrings', 'Lipstick Set'] },
+	{ title: 'The Everyday Neutral', occasion: 'Coffee run + errands', img: '/images/outfits.jpg', items: ['Silk Scarf', 'Handbag', 'Gold Earrings'] },
+	{ title: 'Santorini Whites', occasion: 'Holiday by the sea', img: '/images/travel.jpg', items: ['Sunglasses', 'Silk Scarf', 'Lipstick Set'] },
+	{ title: 'Paris, But Make It Easy', occasion: 'Travel day', img: '/images/vlog-paris.jpg', items: ['Sunglasses', 'Leather Tote', 'Perfume'] },
+	{ title: 'Desk to Dinner', occasion: 'Work day', img: '/images/work.jpg', items: ['Handbag', 'Gold Earrings', 'Perfume'] },
+	{ title: 'Slow Morning in Ubud', occasion: 'Slow travel', img: '/images/bali.jpg', items: ['Silk Scarf', 'Sunglasses', 'Makeup Set'] }
 ];

@@ -82,8 +82,10 @@
 					<div class="mt-2 flex flex-col gap-1.5 text-[13px] font-medium text-stone-600">
 						<a href="/about" class="hover:text-stone-900">About</a>
 						<a href="/shop" class="hover:text-stone-900">Shop</a>
+						<a href="/lookbook" class="hover:text-stone-900">Lookbook</a>
 						<a href="/blog" class="hover:text-stone-900">Blog</a>
 						<a href="/videos" class="hover:text-stone-900">Videos</a>
+						<a href="/faq" class="hover:text-stone-900">FAQ</a>
 						<a href="/contact" class="hover:text-stone-900">Contact</a>
 					</div>
 				</div>

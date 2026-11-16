@@ -8,7 +8,7 @@
 	type LinkCard = { title: string; sub: string; img: string; href: string };
 
 	const cards: LinkCard[] = [
-		{ title: 'My Outfits', sub: 'Shop my looks', img: '/images/outfits.jpg', href: '/shop' },
+		{ title: 'My Outfits', sub: 'Shop my looks', img: '/images/outfits.jpg', href: '/lookbook' },
 		{ title: 'Travel Blog', sub: 'Destinations & tips', img: '/images/travel.jpg', href: '/blog' },
 		{ title: 'Beauty Favs', sub: 'My top products', img: '/images/beauty.webp', href: '/shop' },
 		{ title: 'Work With Me', sub: 'Collabs & partnerships', img: '/images/work.jpg', href: '/contact' }

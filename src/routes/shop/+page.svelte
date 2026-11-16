@@ -46,13 +46,13 @@
 		<div class="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 lg:gap-4">
 			{#each visible as p, i (p.name)}
 				<div use:reveal={(i % 4) * 70} class="group overflow-hidden rounded-2xl bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
-					<div class="relative">
+					<a href="/shop/{p.slug}" aria-label="{p.name} — view details" class="relative block">
 						<img src={p.img} alt={p.name} loading="lazy" class="h-[170px] w-full object-cover transition duration-500 group-hover:scale-[1.04] sm:h-[220px] lg:h-[260px]" />
 						<span class="absolute left-2 top-2 rounded-full bg-black/45 px-2.5 py-1 text-[10px] font-bold text-white">{p.category}</span>
-					</div>
+					</a>
 					<div class="flex items-center justify-between px-3 py-3">
 						<span>
-							<span class="block text-[13px] font-semibold leading-tight sm:text-[14px]">{p.name}</span>
+							<a href="/shop/{p.slug}" class="block text-[13px] font-semibold leading-tight hover:underline sm:text-[14px]">{p.name}</a>
 							<span class="block text-[12px] text-stone-500">{p.price}</span>
 						</span>
 						<button
